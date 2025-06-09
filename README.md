@@ -1,37 +1,38 @@
-# The Go Workshop
+# Go Workshop
+Este repositório contêm os códigos referentes aos encontros do workshop de Golang no LHC
 
-## Requirements
+## Requisitos
 - Go >= 1.23
-- VsCode with Go extension
+- VsCode with Go extension ou a IDE de sua preferência
 
-## Project structure
+## Estrutura do projeto
 
 ### Branching:
 Each section example is organized in a correspondent branch name:
 example:
 
-gw01-organization
-gw01-organization-issue
+```sh
+feat/01/project-code-organization
+main
+```
 
-### Content Outline
-- Project objectives
-- Installing Go
-- Running feed-reader
-- Present main features of Go:
+### Roteiro de Conteúdo para o 1 encontro:
+
+- Objetivos do projeto
+- Instalando o Go
+- Executando o feed-reader
+- Apresentar principais recursos do Go:
   - goroutines
   - channels
-  - Interface implementation
+  - Implementação de interfaces, etc
 
-- Dissecing feed-reader
-  Project organization
-  - cmd
-   Imports and name collision
-    import
-    blank
-    name collision
-   Packages naming and common issues
-     package
-     init
-       issues with init functions
-     main function
+- Dissecando o feed-reader
+   - Organização do projeto
+       - Imports e colisão de nomes
+       - colisão de nomes
+   - Pacotes e problemas comuns
+       - package
+       - função init
+      - problemas com funções init
+      - função main
 
