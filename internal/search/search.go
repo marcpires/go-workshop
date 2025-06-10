@@ -5,10 +5,15 @@ import (
 	"sync"
 )
 
+// matcher is map (reference type)
+// var are alawys initialized to their zero value:
+// false for bool, 0 for int, nil for pointers, slices, maps, channels, interfaces, and function types.
 var matchers = make(map[string]Matcher)
 
 // Run uses a matcher to search for feeds and diplay it results.
 func Run(searchTerm string) {
+
+	// declare and initialize variables with short variable declaration operator
 	feeds, err := RetrieveFeeds()
 	if err != nil {
 		log.Fatal(err)

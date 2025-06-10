@@ -13,6 +13,8 @@ type Result struct {
 
 // Matcher defines the behavior requred by types that want
 // to implement a new search type.
+// Interfaces tipically represents a sdingle action, when an interface
+// has a single method,
 type Matcher interface {
 	Search(feed *Feed, searchTerm string) ([]*Result, error)
 }
