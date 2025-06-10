@@ -52,11 +52,11 @@ feat/01/project-code-organization
 
 - Dissecando o feed-reader
    - Organização do projeto
-       - Imports e colisão de nomes
+       - Imports
+       - variáveis
        - colisão de nomes
    - Pacotes e problemas comuns
        - package
        - função init
-      - problemas com funções init
-      - função main
-
+       - problemas com funções init
+       - função main
