@@ -40,23 +40,3 @@ feat/01/project-code-organization
 
 ![Feed Reader Architecture](./assets/architecture.png)
 
-### Roteiro de Conteúdo para o 1 encontro:
-
-- Objetivos do projeto
-- Instalando o Go
-- Executando o feed-reader
-- Apresentar principais recursos do Go:
-  - goroutines
-  - channels
-  - Implementação de interfaces, etc
-
-- Dissecando o feed-reader
-   - Organização do projeto
-       - Imports
-       - variáveis
-       - colisão de nomes
-   - Pacotes e problemas comuns
-       - package
-       - função init
-       - problemas com funções init
-       - função main
