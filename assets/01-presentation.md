@@ -37,3 +37,7 @@ A idéia é ser um encontro mensal como outras inciativas do Hackerspace e abert
        - função main
        - problemas com funções init
 
+---
+# Feed reader
+
+![Feed Reader Architecture](../assets/architecture.png)
