@@ -2,6 +2,8 @@
 Este repositório contêm os códigos referentes aos encontros do workshop de Golang no LHC
 
 ## Requisitos
+- Git
+- Git lfs
 - Go >= 1.23
 - VSCode com [extensão Go](https://marketplace.visualstudio.com/items?itemName=golang.Go) ou a IDE de sua preferência
 
