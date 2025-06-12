@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+footer: '(c) 2025 Marcelo da Silva Pires'
 ---
 
 # **LHC Go workshop**
@@ -9,7 +10,7 @@ paginate: true
 
 Objetivo de fomentar o estudo da linguagem Go através da desconstrução de uma aplicação - show me the code - e assim abordar os vários aspectos da linguagem.
 
-A idéia é ser um encontro mensal como outras inciativas do Hackerspace e aberto a comunidade.
+A idéia é ser um encontro recorrente como outras inciativas do Hackerspace e aberto a comunidade.
 
 ---
 
@@ -17,9 +18,9 @@ A idéia é ser um encontro mensal como outras inciativas do Hackerspace e abert
 
 ![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
-- É uma linguagem simples
-- Desenpenho e Eficiência
-- Diretamentamente ligada com am ambientes Cloud Native
+- Linguagem simples
+- Desempenho e Eficiência
+- Desenvolvimento Cloud Native
 
 ---
 

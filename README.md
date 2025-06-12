@@ -6,10 +6,15 @@ Este repositório contêm os códigos referentes aos encontros do workshop de Go
 - Git lfs
 - Go >= 1.23
 - VSCode com [extensão Go](https://marketplace.visualstudio.com/items?itemName=golang.Go) ou a IDE de sua preferência
+- [Marp](https://marp.app/) para visualização dos [slides em Markdown](./assets/01-presentation.md)
+
+
 
 ## Estrutura do projeto
 
 ```sh
+├── assets
+│   ├── 01-presentation.md -- Slide Markdown com tópicos vistos no encontro
 ├── cmd
 │   ├── main.go -- Ponto de entrada da aplicação
 │   └── shadow
@@ -38,7 +43,7 @@ feat/01/project-code-organization
 
 **Nota**: Nome das ramificações e comentários no código serão apresentados em Inglês
 
-## Architetura
+## Architetura da aplicação
 
 ![Feed Reader Architecture](./assets/architecture.png)
 
