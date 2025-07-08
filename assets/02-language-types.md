@@ -72,7 +72,7 @@ bruno := User{"Bruno", "bruno@lhc.net.br", 223, false}
 ---
 ![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
-# Struct embedding
+# Type embedding
 
 Quando uma `struct` possuí um campo não nomeado, definimos esse campo como `embedded`. Veja [cmd/embedded/main.go](../cmd/embedded/main.go)
 
@@ -91,7 +91,7 @@ foo.Baz = 23
 ---
 ![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
-# Struct embedding
+# Type embedding
 
 O campo Baz é promovido parac `Foo` e pode ser acessado de duas formas:
 
@@ -109,7 +109,7 @@ func main() {
 
 ![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
-# Struct embedding
+# Type embedding
 
 Vejamos um pouco mais sobre alguns problemas que podem ocorrer com o mau uso de [*type enbedding*](../cmd/embedded/main.go)
 
