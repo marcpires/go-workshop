@@ -22,7 +22,7 @@ type Bar struct {
 // external clients.
 func embedMisuse() {
 	m := inmem.New()
-	m.Lock()
+	m.Lock() // Should not be able do this
 }
 
 func main() {
