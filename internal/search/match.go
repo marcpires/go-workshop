@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-// Results is a feed search Result.
+// Result is a feed search Result.
 type Result struct {
 	Field   string
 	Content string
