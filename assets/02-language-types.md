@@ -69,6 +69,20 @@ marcp := user{
 ```go
 bruno := User{"Bruno", "bruno@lhc.net.br", 223, false}
 ```
+Aqui a ordem ao especificar os valores importa. 
+
+---
+# Struct
+
+![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
+
+Altere a linha 31 do arquivo [main.go](../cmd/langtypes/main.go), como o exemplo abaixo e veja o que acontece ao executar o programa.
+
+```go
+bruno := User{223, "Bruno", false, "bruno@lhc.net.br"}
+```
+**Dica**: Execute o programa via debug na sua IDE preferida
+
 ---
 ![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
