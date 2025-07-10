@@ -11,7 +11,7 @@ type user struct {
 }
 
 type admin struct {
-	person user
+	person user // It´s not type embedding
 	level  string
 }
 
