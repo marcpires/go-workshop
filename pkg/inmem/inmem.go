@@ -3,8 +3,8 @@ package inmem
 import "sync"
 
 type MemData struct {
-	sync.Mutex
-	memo map[string]int
+	sync.Mutex // Solves type embed issue
+	memo       map[string]int
 }
 
 func New() *MemData {

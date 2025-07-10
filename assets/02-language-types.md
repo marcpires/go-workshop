@@ -113,8 +113,50 @@ func main() {
 
 Vejamos um pouco mais sobre alguns problemas que podem ocorrer com o mau uso de [*type enbedding*](../cmd/embedded/main.go)
 
+---
 
+![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
+# Problemas com Type embedding
 
+```go
+package inmem
+
+import "sync"
+
+type MemData struct {
+	sync.Mutex // Mutex é promovido para MemData
+	memo map[string]int
+}
+```
+---
+
+![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
+
+# Problemas com Type embedding
+
+No exemplo, temos sync.Mutex sendo provido para MemData, com isso conseguimos acessar os métodos `Lock()` e `UnLock()` diretamente.
 
 ---
+
+![bg left:40% 80%](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/marcpires/rss/pkg/inmem"
+)
+
+func embedMisuse() {
+	m := inmem.New()
+	m.Lock() // Oops ! deadlock
+	m.Get("teste")
+}
+
+func main() {A
+	embedMisuse()
+}
+```

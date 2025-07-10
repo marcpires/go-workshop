@@ -22,15 +22,17 @@ type Bar struct {
 // external clients.
 func embedMisuse() {
 	m := inmem.New()
-	m.Lock() // Should not be able do this
+	// m.Lock() // Should not be able do this
+
+	m.Get("teste")
 }
 
 func main() {
 	foo := Foo{}
 	foo.Baz = 23
 
-	fmt.Printf("foo.Baz value is %d is promoted", foo.Baz)
-	fmt.Printf("foo.Bar.Baz value is %d", foo.Bar.Baz)
+	fmt.Printf("foo.Baz value is %d is promoted ", foo.Baz)
+	fmt.Printf("foo.Bar.Baz value is %d ", foo.Bar.Baz)
 
-	// embedMisuse()
+	embedMisuse()
 }
